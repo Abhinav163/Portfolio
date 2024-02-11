@@ -392,3 +392,345 @@
 #myBtn:hover {
     background-color: #555;
 }
+
+@media (max-width: 500px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 150px 250px 250px 250px 150px 200px 250px 1050px 200px 660px 600px 3100px 430px 210px;
+    }
+    .nav{
+        background-color:white;
+        text-align: left;
+        font-size: 30px;
+        /* padding-top: 10px; */
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+        /* grid-column: span 2; */
+        width: 300px;
+    }
+    .bar{
+        visibility: hidden;
+    }
+    .nav2{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20px 50px;
+        background-color:white;
+        align-items: center;
+        padding-left: 100px;
+        color: black;
+        text-decoration: none;
+    }
+    .blank1{
+        width: 400px;
+    }
+    .intro{
+        font-size: 40px;
+        padding-top: 0px;
+        grid-column: span 2;
+        /* font-family:Georgia, 'Times New Roman', Times, serif; */
+        text-align: left;
+        width: 400px;
+        padding-left: 20px;
+        background-color:goldenrod;
+    }
+    .intro h3{
+        padding-top: 10px;
+        font-size: 30px;
+        padding-left: 9px;
+        text-align: left;
+        width: 400px;
+    }
+    .name{
+        display: flex;
+        color: white;
+        font-size: 20;
+        filter: drop-shadow(15px 10px 5px #442903);
+    }
+    .blank2{
+        width: 400px;
+        background-color: goldenrod;
+        color: #442903;
+    }
+    .about{
+        background-color: #442903;
+        color: white;
+        font-weight:bolder;
+        font-size: 30px;
+        text-align: left;
+        width: 400px;
+        padding-left: 30px;
+    }
+    .about p{
+        width: 400px;
+        font-size: 40px;
+        color: goldenrod;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .image{
+        width: 400px;
+        /* display: flex; */
+        padding-top: 0px;
+        padding-left:0px;
+        background-color: #442903;
+    }
+    #image1{
+        width: 400px;
+        filter: drop-shadow(1px 5px 15px goldenrod);
+    }
+    .aboutpara{
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        color: wheat;
+        /* padding-right: 300px; */
+        width: 400px;
+        background-color: #442903;
+        /* padding-top: 80px; */
+        /* padding-left: 20px ; */
+        font-size: 30px;
+    }
+    .buttons{
+        background-color: #442903;
+        /* grid-column: span 2; */
+        /* padding-left: 1000px; */
+    }
+    .skills{
+        /* grid-column: span 2; */
+        background-color: #442903;
+        color: white;
+        width: 400px;
+        font-weight:bolder;
+        font-size: 30px;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    .skills p{
+        font-size: 40px;
+        color: goldenrod;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .lang{
+        display: flex;
+        padding-left: 20px;
+        width: 400px;
+        background-color: #442903;
+    }
+    .lang ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 90px;
+    }
+    .lang ul li{
+        padding: 20px;
+    }
+    #html{
+        width: 150px;
+        filter: drop-shadow(1px 0px 15px goldenrod);
+    }
+    #css{
+        filter: drop-shadow(1px 0px 15px goldenrod);
+        padding-left: 10px;
+        width: 140px;
+    }
+    #Js{
+        filter: drop-shadow(1px 0px 15px goldenrod);
+        padding-left: 10px;
+        width: 155px;
+    }
+    #cpp{
+        filter: drop-shadow(1px 0px 15px goldenrod);
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 130px;
+    }
+    #python{
+        width: 90x;
+        filter: drop-shadow(1px 0px 15px goldenrod);
+        padding-left: -0px;
+    }
+    .tools{
+        /* grid-column: span 2; */
+        background-color: #442903;
+        color: white;
+        font-weight:bolder;
+        font-size: 30px;
+        width: 400px;
+        /* padding-top: 100px; */
+        padding-left: 20px;
+    }
+    .tools p{
+        font-size: 40px;
+        color: goldenrod;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .toolbox{
+        padding-left: 100px;
+        width: 320px;
+        /* grid-column: span 2; */
+        background-color: #442903;
+    }
+    .toolbox ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #jy{
+        padding-top: 20px;
+        padding-left: 25px;
+        filter: drop-shadow(1px 0px 15px goldenrod);
+        width: 150px;
+    }
+    #git{
+        padding-top: 20px;
+        padding-left: 30px;
+        width: 150px;
+        filter: drop-shadow(1px 0px 15px goldenrod);
+    }
+    .do{
+        /* grid-column: span 2; */
+        background-color: goldenrod;
+        color: white;
+        font-weight:bolder;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 20px;
+        width: 400px;
+    }
+    .do p{
+        font-size: 40px;
+        color: #442903;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .do ul{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding-left: 15px;
+    }
+    .do ul li{
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .done{
+        /* grid-column: span 2; */
+        background-color: #442903;
+        color: white;
+        font-weight:bolder;
+        font-size: 30px;
+        padding-top: 70px;
+        width: 400px;
+        padding-left: 20px;
+    }
+    .done p{
+        font-size: 40px;
+        color: goldenrod;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    #li1{
+        color: #442903;
+        text-align: center;
+        padding-top: 0px;
+    }
+    #li2{
+        padding-top: 0px;
+        text-align: center;
+        color: #442903;
+    }
+    .done ul{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .done ul li{
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .work1, .work2, .work3, .work4, .work5, .work6{
+        background-color: white;
+        width: 350px;
+        padding-top: 200px;
+        height: 250px;
+    }
+    .end{
+        background-image: url(./Assets/desk.jpg);
+        background-repeat: none;
+        background-size: 1900px;
+        width: 420px;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        color: white;
+        /* grid-column: span 2; */
+        text-align: center;
+    }
+    .end h1{
+        font-size: 50px;
+    }
+    .end h2{
+        font-size: 30px;
+    }
+    .footer{
+        /* grid-column: span 2; */
+        align-items:start;
+        text-align: left;
+        font-size: 100px;
+        background-color: white;
+    }
+    .footer ul{
+        background-color: #442903;
+        width: 420px;
+        display: flex;
+        list-style-type: none;
+        text-align: left;
+        justify-content: left;
+        /* padding-left: 650px; */
+    }
+    .footer ul li{
+        filter: drop-shadow(10px 5px 7px goldenrod);
+        padding-top: 30px;
+        background-color: #442903;
+        padding-left: 0px;
+    }
+    .footer p{
+        padding-left: 80px;
+        padding-top: 30px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .footer ul li:hover{
+        transition: transform 0.8s;
+        transform: scale(1.13);
+    }
+    .fab{
+        color: black;
+    }
+    .fa{
+        color: black;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color:goldenrod;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+    }
+    #myBtn:hover {
+        background-color: #555;
+    }
+}
