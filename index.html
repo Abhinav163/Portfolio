@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinav Sharma | Web-Developer</title>
-    <link rel="shortcut icon" href="./th.jpeg" style="border-radius: 100px;" type="image/x-icon">
+    <title>Abhinav Sharma | Web Developer</title>
+    <link rel="shortcut icon" href="./Assets/th.jpeg" style="border-radius: 100px;" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <meta http-equiv="refresh" content="7"> -->
 </head>
-<body>
+<body onload="typeWriter()">
     <div class="container">
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
-        <div class="nav" id="nav1">| <span style="color: goldenrod; font-weight:bold;"> Abhinav</span> शर्मा</div>
+        <div class="nav" id="nav1"> <span style="font-size: 90px;"> |</span><span class="nav1_2" style="color: goldenrod; font-weight:bold;"> Abhinav</span> शर्मा</div>
         <div class="nav2">
-            <ul>
-                <li><a href="#nav1">Home</a></li>
-                <li><a href="#abou">About Me</a></li>
-                <li><a href="#doin">Services</a></li>
-                <li><a href="#port">Portfolio</a></li>
-            </ul>
+            <div class="cont">
+                <ul class="bar">
+                    <li class="bar1"> | </li>
+                    <li class="bar2"> | </li>
+                    <li class="bar3"> | </li>
+                    <li class="bar4"> | </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#nav1" style="color:#442903; text-decoration:none;">Home</a></li>
+                    <li><a href="#abou" style="color:#442903; text-decoration:none;">About</a></li>
+                    <li><a href="#doin" style="color:#442903; text-decoration:none;">Services</a></li>
+                    <li><a href="#port" style="color:#442903; text-decoration:none;">Portfolio</a></li>
+                </ul>
+            </div>
         </div>
         <div class="blank1"></div>
         <div class="intro">
-            <h2>Hello! I am <span id="name" style="color: white; filter: drop-shadow(15px 10px 5px #442903);">Abhinav Sharma</span></h2>
-            <h3>A Full Stack Web Developer</h3>
+            <h2>Hello! I am <span class="name" >Abhinav Sharma</span></h2>
+            <h3 id="typer"></h3>
         </div>
         <div class="blank2">
             <ul>
-                <li style="padding-left: 0;"><a href="https://www.twitter.com" target="parent"><i class="fab fa-twitter"></i></a></li>
+                <hr class="hr1">
+                <!-- <li style="width: 150px; padding-top:25px; padding-left:0; padding-right:10px;"><hr id="hr1"></li> -->
+                <li style="padding-left: 10;"><a href="https://www.twitter.com" target="parent"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.instagram.com" target="parent"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://github.com/Abhinav163" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/abhinav-sharma163/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a></li>
@@ -40,8 +53,8 @@
         </div>
         <div class="image"><img id="image1" src="./profile_pic-removebg-preview.png" alt="image"></div>
         <div class="aboutpara"><p>
-I'm a full stack web developer, passionate about creating awesome online experiences. I know HTML, CSS, JavaScript, MongoDB, and Bootstrap like the back of my hand. I love blending my creativity with my tech skills to build websites and apps that look great and work even better. Whether it's designing a cool user interface or making sure everything runs smoothly behind the scenes, I'm all about bringing ideas to life. I'm always learning and staying up-to-date with what's new in web development, so I can keep pushing boundaries and making things that people love to use.</p></div>
-        <div class="buttons"><button class="but">MY WORK</button><button class="but"> MY RESUME</button></div>
+            I'm a full stack web developer, passionate about creating awesome online experiences. I know HTML, CSS, JavaScript, MongoDB, and Bootstrap like the back of my hand. I love blending my creativity with my tech skills to build websites and apps that look great and work even better. Whether it's designing a cool user interface or making sure everything runs smoothly behind the scenes, I'm all about bringing ideas to life. I'm always learning and staying up-to-date with what's new in web development, so I can keep pushing boundaries and making things that people love to use.</p></div>
+        <div class="buttons"><button class="but" onclick="window.location.href='#port'" > MY WORK</button><button class="but" onclick= "href='./ABHINAV_RESUME.pdf'" > MY RESUME</button></div>
         <div class="skills">
             What have i learnt?
             <p>My Skills</p>
@@ -57,7 +70,6 @@ I'm a full stack web developer, passionate about creating awesome online experie
         </div>
         <div class="tools">
             What i have used to develope my skills?
-            <!-- WHAT HAVE I USED TO DEVELOPE MY SKILLS? -->
             <p>My Tools</p>
         </div>
         <div class="toolbox">
@@ -71,30 +83,30 @@ I'm a full stack web developer, passionate about creating awesome online experie
             What i can do?
             <p>My Services</p>
             <ul>
-                <li><div class="ser1"></div></li>
-                <li><div class="ser2"></div></li>
-                <li><div class="ser3"></div></li>
+                <li><div class="ser1">Web Development</div></li>
+                <li><div class="ser2">Figma</div></li>
+                <li><div class="ser3">Photoshop</div></li>
             </ul>
         </div>
         <div class="done" id="port">
             What i have done?
             <p>My works</p>
             <ul id="li1">
-                <li><div class="work1"></div></li>
-                <li><div class="work2"></div></li>
-                <li><div class="work3"></div></li>
+                <li><div class="work1"> COMING SOON!!</div></li>
+                <li><div class="work2"> COMING SOON!!</div></li>
+                <li><div class="work3"> COMING SOON!!</div></li>
                 <br>
             </ul>
-            <ul>
-                <li><div class="work4"></div></li>
-                <li><div class="work5"></div></li>
-                <li><div class="work6"></div></li>
+            <ul id="li2">
+                <li><div class="work4"> COMING SOON!! </div></li>
+                <li><div class="work5"> COMING SOON!! </div></li>
+                <li><div class="work6"> COMING SOON!! </div></li>
             </ul>
         </div>
         <div class="end">
             <h1>HAVE ANY PROJECT IN MIND?</h1>
             <h2>Lets build it together!</h2>
-            <button class="but">CONTACT ME</button>
+            <button class="but" onclick="location.href='./Form/index.html';" >CONTACT ME</button>
         </div>
         <div class="footer">
             <ul>
@@ -121,7 +133,16 @@ I'm a full stack web developer, passionate about creating awesome online experie
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
-        </script>
-        
+        var i = 0;
+        var txt = 'A Full Stack Web Developer';
+        var speed = 160;
+        function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("typer").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 160);
+                }
+        }
+    </script>    
 </body>
 </html>
