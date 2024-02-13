@@ -496,7 +496,7 @@
 #myBtn:hover {
     background-color: #555;
 }
-@media (max-width: 508px) {
+@media (max-width: 308px) {
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 100px 10px 450px 200px 250px 550px 200px 300px 230px 1400px 180px 600px 630px 1720px 240px;
