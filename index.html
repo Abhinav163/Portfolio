@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Sharma | Web Developer</title>
-    <link rel="shortcut icon" href="./Assets/th.jpeg" style="border-radius: 100px;" type="image/x-icon">
+    <link rel="shortcut icon" href="./th.jpeg" style="border-radius: 100px;" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <meta http-equiv="refresh" content="7"> -->
 </head>
 <body onload="typeWriter()">
     <div class="container">
@@ -40,7 +39,6 @@
         <div class="blank2">
             <ul>
                 <hr class="hr1">
-                <!-- <li style="width: 150px; padding-top:25px; padding-left:0; padding-right:10px;"><hr id="hr1"></li> -->
                 <li style="padding-left: 10;"><a href="https://www.twitter.com" target="parent"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://www.instagram.com" target="parent"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://github.com/Abhinav163" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
@@ -52,10 +50,11 @@
             <p>About Me</p>
         </div>
         <div class="image"><img id="image1" src="./profile_pic-removebg-preview.png" alt="image"></div>
-        <div class="aboutpara"><p>
-            I'm a full stack web developer, passionate about creating awesome online experiences. I know HTML, CSS, JavaScript, MongoDB, and Bootstrap like the back of my hand. I love blending my creativity with my tech skills to build websites and apps that look great and work even better. Whether it's designing a cool user interface or making sure everything runs smoothly behind the scenes, I'm all about bringing ideas to life. I'm always learning and staying up-to-date with what's new in web development, so I can keep pushing boundaries and making things that people love to use.</p></div>
+        
+        <div class="aboutpara"><p>I'm a full stack web developer, passionate about creating awesome online experiences. I know HTML, CSS, JavaScript, MongoDB, and Bootstrap like the back of my hand. I love blending my creativity with my tech skills to build websites and apps that look great and work even better. Whether it's designing a cool user interface or making sure everything runs smoothly behind the scenes, I'm all about bringing ideas to life. I'm always learning and staying up-to-date with what's new in web development, so I can keep pushing boundaries and making things that people love to use.</p></div>
         <div class="buttons"><button class="but" onclick="window.location.href='#port'" > MY WORK</button><button class="but" onclick= "href='./ABHINAV_RESUME.pdf'" > MY RESUME</button></div>
-        <div class="skills">
+        <div class="parahide"><p>I'm a full stack web developer, passionate about creating awesome online experiences. I know HTML, CSS, JavaScript, MongoDB, and Bootstrap like the back of my hand. I love blending my creativity with my tech skills to build websites and apps that look great and work even better. Whether it's designing a cool user interface or making sure everything runs smoothly behind the scenes, I'm all about bringing ideas to life. I'm always learning and staying up-to-date with what's new in web development, so I can keep pushing boundaries and making things that people love to use.</p></div>
+            <div class="skills">
             What have i learnt?
             <p>My Skills</p>
         </div>
@@ -66,6 +65,7 @@
                 <li><img src="./Js logo.png" alt="Js" id="Js"></li>
                 <li><img src="./cpp.png" alt="c++" id="cpp"></li>
                 <li><img src="./Python logo.png" alt="python" id="python"></li>
+                <li><img src="./bootstrap.png" alt="Bootstrap" id="bootstrap"></li>
             </ul>
         </div>
         <div class="tools">
@@ -106,7 +106,7 @@
         <div class="end">
             <h1>HAVE ANY PROJECT IN MIND?</h1>
             <h2>Lets build it together!</h2>
-            <button class="but" onclick="location.href='./Form.html';" >CONTACT ME</button>
+            <button class="but" onclick="location.href='./form.html';" >CONTACT ME</button>
         </div>
         <div class="footer">
             <ul>
@@ -119,7 +119,6 @@
         </div>
     </div>
     <script>
-        // Get the button
         let mybutton = document.getElementById("myBtn");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
