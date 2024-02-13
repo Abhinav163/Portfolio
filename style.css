@@ -499,7 +499,7 @@
 @media (max-width: 508px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 10px 450px 200px 250px 550px 200px 300px 230px 1400px 180px 600px 630px 1720px 240px;
+        grid-template-rows: 100px 10px 450px 200px 250px 430px 210px 410px 180px 1400px 180px 600px 630px 1720px 240px;
     }
     .nav{
         background-color:white;
@@ -509,7 +509,7 @@
         font-weight: bold;
         font-family:'Courier New', Courier, monospace;
         /* grid-column: span 2; */
-        width: 400px;
+        width: 380px;
     }
     
     .cont{
@@ -532,12 +532,8 @@
         /* height: 100px; */
         width: 400px;
     }
-    .blank1{
-        background-color:goldenrod;
-        /* grid-column: span 2; */
-    }
     .intro{
-        width: 400px;
+        width: 380px;
         font-size: 50px;
         padding-left: 20px;
         /* padding-top: 70px; */
@@ -560,7 +556,7 @@
 .blank2{
     background-color: goldenrod;
     color: #442903;
-    width: 420px;
+    width: 400px;
 }
 .blank2 ul{
     padding-top: 50px;
@@ -568,18 +564,18 @@
 }
 
 .about{
-    width: 400px;
+    width: 380px;
     padding-left: 20px;
 }
 .image{
-    width: 400px;
+    width: 380px;
     padding-top: 20px;
     padding-left:10px;
     padding-right: 10px;
     background-color: #442903;
 }
 #image1{
-    width: 400px;
+    width: 390px;
     filter: drop-shadow(1px 5px 15px goldenrod);
 }
 #image1:hover{
@@ -591,7 +587,8 @@
 .parahide{
     display:block;
     position: relative;
-    width: 350px;
+    width: 330px;
+    padding-top: 30px;
     padding-left: 20px;
     text-align: center;
 }
@@ -601,13 +598,13 @@
 
 .buttons{
     padding-left: 20px;
-    width: 400px;
+    width: 380px;
 }
 .skills{
-    width: 400px;
+    width: 380px;
     font-weight:bolder;
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-left: 20px;
 }
 .skills p{
@@ -618,7 +615,7 @@
 }
 .lang{
     padding-left: 30px;
-    width: 390px;
+    width: 370px;
     background-color: #442903;
 }
 #bootstrap{
@@ -654,7 +651,7 @@
     padding-left: 1px;
 }
 .tools{
-    width: 400px;
+    width: 380px;
     font-size: 30px;
     padding-left: 20px;
 }
@@ -662,7 +659,7 @@
     font-size: 50px;
 }
 .toolbox{
-    width: 400px;
+    width: 380px;
     padding-left: 20px;
     background-color: #442903;
 }
@@ -686,10 +683,11 @@
 .do{
     font-size: 30px;
     padding-top: 50px;
-    padding-left: 20px;
-    width: 400px;
+    padding-left: 10px;
+    width: 390px;
 }
 .do p{
+    padding-left: 10px;
     font-size: 50px;
 }
 .do ul{
@@ -705,7 +703,7 @@
 }
 .done{
     padding-left: 20px;
-    width: 400px;
+    width: 380px;
 }
 .done p{
     font-size: 50px;
@@ -720,10 +718,10 @@
     list-style: none;
     display:flex;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 .done ul li{
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 0px;
 }
 .work1, .work2, .work3, .work4, .work5, .work6{
@@ -733,7 +731,7 @@
     height: 250px;
 }
 .end{
-    background-size: 420px;
+    background-size: 400px;
     align-items: center;
     background-repeat: no-repeat;
     padding-bottom: 100px;
@@ -743,11 +741,11 @@
 .end h1{
     padding-top: 20px;
     font-size: 20px;
-    padding-right: 45px;
+    padding-right: 55px;
     text-align: center;
 }
 .end h2{
-    padding-right: 45px;
+    padding-right: 55px;
     font-size: 30px;
 }
 .footer{
@@ -755,14 +753,14 @@
     font-size: 60px;
 }
 .but{
-    margin-right: 55px;
+    margin-right: 65px;
 }
 .footer p{
     font-size: 15px;
     padding-bottom: 20px;
 }
 #myBtn {
-    right: 70px;
+    right: 90px;
     z-index: 1;
 }
 }
