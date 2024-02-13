@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: white; */
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 600px 107px;
+    background-color: #442903;
+}
+.head{
+    background-color: #442903;
+    text-align: center;
+}
+.head h1{
+    background-color: #442903;
+    padding-top: 150px;
+    font-size: 50px;
+    color: white;
+}
+.box{
+    border-radius: 30px;
+    box-shadow: 0px 0px 60px goldenrod;
+    margin-left: 700px;
+    background-color: goldenrod;
+    width: 500px;
+    height: 390px;
+    text-align: center;
+}
+.form{
+    margin-top: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    /* background-color: white; */
+    align-items: center;
+}
+#Fname, #Lname, #Email, #Phone {
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    background-color: beige;
+    width: 200px;
+}
+
+#Email{
+    margin-left: 29px;
+}
+#Phone{
+    margin-left: 20px;
+}
+#details{
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+#robot{
+    text-align: left;
+    font-size: 30px;
+}
+#but{
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 5px;
+}
+.foot{
+    background-color:#442903;
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.foot h3{
+    color: white;
+    background-color: #442903;
+}
+#back{
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 5px;
+}
