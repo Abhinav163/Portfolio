@@ -7,7 +7,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 150px 400px 150px 250px 550px 200px 300px 350px 200px 260px 400px 1300px 380px 210px;
+    grid-template-rows: 100px 150px 400px 150px 250px 550px 240px 400px 350px 200px 260px 400px 1300px 380px 210px;
 }
 .nav{
     background-color:white;
