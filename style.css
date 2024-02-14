@@ -5,6 +5,7 @@
 }
 .container{
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 150px 400px 150px 250px 550px 200px 300px 350px 200px 260px 400px 1300px 380px 210px;
 }
@@ -97,8 +98,8 @@
 .intro h3{
     padding-top: 10px;
     font-size: 60px;
-    padding-left: 299px;
-    text-align: left;
+    /* padding-left: 16%; */
+    text-align: center;
 }
 .name{
     color: white;
@@ -156,7 +157,8 @@
 }
 .image{
     padding-top: 20px;
-    padding-left: 250px;
+    text-align: center;
+    /* padding-left: 250px; */
     background-color: #442903;
 }
 #image1{
@@ -173,7 +175,8 @@
     /* width: 600px; */
     background-color: #442903;
     padding-top: 80px;
-    padding-left: 20px ;
+    text-align: center;
+    /* padding-left: 20px ; */
     font-size: 30px;
 }
 .parahide{
@@ -188,7 +191,8 @@
 .buttons{
     background-color: #442903;
     grid-column: span 2;
-    padding-left: 1000px;
+    text-align: center;
+    /* padding-left: 1000px; */
 }
 .but{
     border-width: 0;
@@ -199,7 +203,7 @@
     font-size: 30px;
     padding: 10px;
     font-weight: bolder;
-    margin-right: 10px;
+    margin-right: 30px;
     transition: transform 0.5s;
 }
 .but:hover{
@@ -339,6 +343,7 @@
     padding-top: 10px;
 }
 .do ul{
+    align-items: center;
     padding-top: 60px;
     display: flex;
     list-style-type: none;
@@ -499,7 +504,10 @@
 @media (max-width: 508px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 10px 550px 200px 250px 430px 210px 410px 180px 1400px 180px 600px 630px 1720px 240px;
+        grid-template-rows: 100px 10px 550px 200px 250px 430px 170px 350px 180px 1400px 180px 600px 630px 1720px 240px;
+    }
+    .blank1{
+        width: 100%;
     }
     .nav{
         background-color:white;
@@ -509,7 +517,7 @@
         font-weight: bold;
         font-family:'Courier New', Courier, monospace;
         /* grid-column: span 2; */
-        width: 380px;
+        width: 100%;
     }
     
     .cont{
@@ -528,25 +536,21 @@
     .nav2{
         display: none;
     }
-    .blank1{
-        /* height: 100px; */
-        width: 400px;
-    }
     .intro{
-        width: 380px;
+        width: 100%;
         font-size: 50px;
-        padding-left: 20px;
+        padding-left: 0px;
         /* padding-top: 70px; */
         /* grid-column: span 2; */
         /* font-family:Georgia, 'Times New Roman', Times, serif; */
-        text-align: left;
+        text-align: center;
         background-color:goldenrod;
     }
     .intro h3{
         padding-top: 20px;
         font-size: 40px;
-        padding-left: 20px;
-        text-align: left;
+        padding-left: 10px;
+        text-align: center;
     }
     .name{
         color: white;
@@ -556,26 +560,32 @@
 .blank2{
     background-color: goldenrod;
     color: #442903;
-    width: 400px;
+    width: 100%;
 }
 .blank2 ul{
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .about{
-    width: 380px;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 0px;
+}
+.about h3{
+    padding-left: 5%;
+}
+.about p{
+    padding-left: 5%;
 }
 .image{
-    width: 380px;
+    width: 100%;
     padding-top: 20px;
-    padding-left:10px;
-    padding-right: 10px;
+    padding-left:0px;
+    padding-right: 0px;
     background-color: #442903;
 }
 #image1{
-    width: 390px;
+    width: 400px;
     filter: drop-shadow(1px 5px 15px goldenrod);
 }
 #image1:hover{
@@ -587,35 +597,37 @@
 .parahide{
     display:block;
     position: relative;
-    width: 330px;
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
     text-align: center;
 }
 .parahide p{
+    width: 100%;
     font-size: 20px;
 }
 
 .buttons{
-    padding-left: 20px;
-    width: 380px;
+    text-align: center;
 }
 .skills{
-    width: 380px;
+    width: 100%;
     font-weight:bolder;
     font-size: 30px;
     padding-top: 60px;
-    padding-left: 20px;
+    padding-left: 0px;
+}
+.skills h3{
+    padding-left: 5%;
 }
 .skills p{
     font-size: 50px;
     color: goldenrod;
-    padding-left: 0px;
+    padding-left: 5%;
     padding-top: 10px;
 }
 .lang{
-    padding-left: 30px;
-    width: 370px;
+    padding-left: 0px;
+    width: 100%;
     background-color: #442903;
 }
 #bootstrap{
@@ -625,11 +637,12 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    align-items: center;
 }
 .lang ul li{
     padding: 2px;
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 0px;
 }
 #html{
     width: 190px;
@@ -651,25 +664,30 @@
     padding-left: 1px;
 }
 .tools{
-    width: 380px;
+    width: 100%;
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 0px;
+}
+.tools h3{
+    padding-left: 5%;
 }
 .tools p{
     font-size: 50px;
+    padding-left: 5%;
 }
 .toolbox{
-    width: 380px;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 0px;
     background-color: #442903;
 }
 .toolbox ul{
     list-style-type: none;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .toolbox ul li{
-    padding-left: 90px;
+    /* padding-left: 90px; */
 }
 #jy{
     /* background-color: white; */
@@ -683,11 +701,14 @@
 .do{
     font-size: 30px;
     padding-top: 50px;
-    padding-left: 10px;
-    width: 390px;
+    padding-left: 0px;
+    width: 100%;
+}
+.do h3{
+    padding-left: 5%;
 }
 .do p{
-    padding-left: 10px;
+    padding-left: 5%;
     font-size: 50px;
 }
 .do ul{
@@ -698,17 +719,23 @@
     padding-left: 0px;
 }
 .do ul li{
+    text-align: center;
     padding-top: 20px;
-    padding-left: 15px;
+    padding-left: 0px;
 }
 .done{
-    padding-left: 20px;
-    width: 380px;
+    padding-left: 0px;
+    width: 100%;
+}
+.done h3{
+    padding-left: 5%;
 }
 .done p{
+    padding-left: 5%;
     font-size: 50px;
 }
 #li1{
+    align-items: center;
     padding-top: 60px;
 }
 #li2{
@@ -721,6 +748,7 @@
     padding-left: 5px;
 }
 .done ul li{
+    text-align: center;
     padding-top: 20px;
     padding-left: 0px;
 }
@@ -731,7 +759,7 @@
     height: 250px;
 }
 .end{
-    background-size: 400px;
+    background-size: 100%;
     align-items: center;
     background-repeat: no-repeat;
     padding-bottom: 100px;
@@ -741,26 +769,24 @@
 .end h1{
     padding-top: 20px;
     font-size: 20px;
-    padding-right: 55px;
     text-align: center;
 }
 .end h2{
-    padding-right: 55px;
     font-size: 30px;
 }
 .footer{
-    width: 400px;
+    width: 100%;
     font-size: 60px;
 }
 .but{
-    margin-right: 65px;
+    margin-left: 30px;
 }
 .footer p{
     font-size: 15px;
     padding-bottom: 20px;
 }
 #myBtn {
-    right: 90px;
+    right: 50px;
     z-index: 1;
 }
 }
