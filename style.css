@@ -499,7 +499,7 @@
 @media (max-width: 508px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 10px 450px 200px 250px 430px 210px 410px 180px 1400px 180px 600px 630px 1720px 240px;
+        grid-template-rows: 100px 10px 550px 200px 250px 430px 210px 410px 180px 1400px 180px 600px 630px 1720px 240px;
     }
     .nav{
         background-color:white;
