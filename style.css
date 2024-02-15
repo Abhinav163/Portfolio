@@ -228,7 +228,7 @@
     padding-top: 10px;
 }
 .lang{
-    padding-left: 20%;
+    padding-left: 15%;
     grid-column: span 2;
     background-color: #442903;
     /* display: flex; */
@@ -269,12 +269,17 @@
     padding-top: 15px;
     width: 200px;
 }
+#jquerry{
+    width: 200px;
+    filter: drop-shadow(1px 0px 15px goldenrod);
+    padding-left: 20px;
+}
 
 #python{
     filter: drop-shadow(1px 0px 15px goldenrod);
     padding-left: 30px;
 }
-#html:hover, #css:hover, #python:hover, #Js:hover, #cpp:hover,#bootstrap:hover {
+#html:hover, #css:hover, #python:hover, #Js:hover, #cpp:hover,#bootstrap:hover,#jquerry:hover {
     transition: transform 0.8s;
     transform: scale(1.13);
     filter: drop-shadow(1px 0px 15px white);
@@ -295,7 +300,7 @@
     padding-top: 10px;
 }
 .toolbox{
-    padding-left: 20%;
+    padding-left: 15%;
     grid-column: span 2;
     background-color: #442903;
 }
