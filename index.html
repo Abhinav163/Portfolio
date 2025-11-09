@@ -187,7 +187,6 @@
           <span class="line mb-5"></span>
           <div class="row">
             <div class="col-1 text-danger pt-1">
-              <!-- <i class="ti-widget icon-lg"></i> -->
               <i class="fas fa-terminal text-primary icon-lg"></i>
             </div>
             <div class="col-10 ml-auto mr-3">
@@ -470,7 +469,7 @@
               <div class="card-header has-icon">
                 <i class="ti-vector text-danger" aria-hidden="true"></i>
               </div>
-              <div class="card-body px-4 py-3 fixed-box">
+              <div class="card-body px-4 py-3">
                 <h5 class="mb-3 card-title text-dark">Portfolio</h5>
                 <p class="subtitle">Currently Viewing......</p>
               </div>
@@ -479,7 +478,6 @@
           <div class="col-md-4 col-sm-6">
             <div class="card mb-5">
               <div class="card-header has-icon">
-                <!-- <i class="ti-package text-danger" aria-hidden="true"></i> -->
                 <i class="fas fa-code text-primary icon-xl"></i>
               </div>
               <div class="card-body px-4 py-3">
@@ -644,7 +642,7 @@
     <section class="section bg-dark py-5">
       <div class="container text-center">
         <h2 class="text-light mb-5 font-weight-normal">
-          I Am Available For Internship
+          I Am Available For Internship / Full-Time role
         </h2>
         <button
           class="btn bg-primary w-lg"
@@ -697,7 +695,6 @@
                     Send Message
                   </button>
                 </div>
-                <!-- This paragraph will display the form response -->
                 <p id="form-response" style="display: none"></p>
               </form>
             </div>
@@ -822,7 +819,7 @@
                 formResponse.textContent =
                   "Thank you for your message! I will get back to you soon.";
                 formResponse.style.color = "green";
-                form.reset(); // Reset the form fields after successful submission
+                form.reset();
               } else {
                 formResponse.style.display = "block";
                 formResponse.textContent =
