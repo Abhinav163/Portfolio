@@ -1,0 +1,160 @@
+{
+  "personal": {
+    "name": "Abhinav Sharma",
+    "title": "Developer at EazyDiner",
+    "subtitle": "Hello, I am",
+    "description": "Web Developer",
+    "resumeLink": "https://drive.google.com/file/d/1ckL7Jx_sKtXlJxS-QFbrkDljjQP-KDP7/view?usp=sharing",
+    "avatar": "assets/imgs/avatar.jpg",
+    "email": "sharmaabhinav23736@gmail.com",
+    "phone": "+91 7011051307",
+    "address": "Faridabad, Haryana",
+    "whoAmI": "A Web Developer",
+    "whoAmIDescription": "Who loves to build exciting website and play with css to create new layouts.",
+    "hireMeText": "I Am Available For Full-Time role"
+  },
+  "social": {
+    "twitter": "https://twitter.com/Abhinav1632",
+    "linkedin": "https://www.linkedin.com/in/abhinav-sharma163/",
+    "github": "https://github.com/Abhinav163"
+  },
+  "expertise": [
+    {
+      "icon": "fas fa-terminal text-primary icon-lg",
+      "title": "Core Languages",
+      "description": "C++, Python"
+    },
+    {
+      "icon": "fas fa-laptop-code text-primary icon-lg",
+      "title": "Web Development",
+      "description": "MongoDB, ExpressJs, ReactJs, NodeJs, HTML, CSS, JavaScript, Tailwind/BootStrap CSS, SQL, PostgreSQL"
+    },
+    {
+      "icon": "ti-paint-bucket icon-lg",
+      "title": "UI/UX",
+      "description": "Figma, Canva, PenPot"
+    },
+    {
+      "icon": "ti-stats-up icon-lg",
+      "title": "Data Analysis",
+      "description": "Python, R, SQL, AWS QuickSight, PowerBI, Atlan"
+    }
+  ],
+  "experience": [
+    {
+      "company": "EazyDiner Pvt Ltd",
+      "position": "Software Developer Engineer",
+      "description": "I working as a Software Developer Engineer at EazyDiner and contributing on several live projects with the developer team."
+    },
+    {
+      "company": "Delhivery Pvt Ltd",
+      "position": "Data Analyst - Intern",
+      "description": "I worked as a data Analyst at Delhivery and worked on several live projects with the Internal Audit team."
+    },
+    {
+      "company": "DeployH.Ai",
+      "position": "React Developer - Intern",
+      "description": "I worked as a React Developer at DeployH.Ai where i built several SAAS websites."
+    },
+    {
+      "company": "UniSphere",
+      "position": "Web Developer - Intern",
+      "description": "I worked as Senior Web Developer at UniSphere where i built the website for the IT department to manage the app known as UniSphere."
+    }
+  ],
+  "education": [
+    {
+      "year": "2022 - 2026",
+      "degree": "B.Tech - Computer Science (AI/ML)",
+      "institution": "BML Munjal University, Gurgaon"
+    },
+    {
+      "year": "2020 - 2022",
+      "degree": "High School",
+      "institution": "DAV Public School, Faridabad"
+    },
+    {
+      "year": "2010 - 2020",
+      "degree": "Intermediate School",
+      "institution": "DAV Public School, Faridabad"
+    }
+  ],
+  "skills": [
+    {
+      "name": "C++",
+      "percentage": 80
+    },
+    {
+      "name": "Java",
+      "percentage": 65
+    },
+    {
+      "name": "Python",
+      "percentage": 75
+    },
+    {
+      "name": "Mern Stack",
+      "percentage": 85
+    },
+    {
+      "name": "R",
+      "percentage": 75
+    },
+    {
+      "name": "HTML5, Js & CSS (Bootstrap, Tailwind)",
+      "percentage": 100
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "percentage": 90
+    },
+    {
+      "name": "Hindi",
+      "percentage": 100
+    }
+  ],
+  "stats": [
+    {
+      "icon": "ti-alarm-clock icon-xl",
+      "value": "2.3+",
+      "label": "Year Worked"
+    },
+    {
+      "icon": "ti-layers-alt icon-xl",
+      "value": "3",
+      "label": "Internships Finished"
+    },
+    {
+      "icon": "ti-face-smile icon-xl",
+      "value": "Love",
+      "label": "to CODE"
+    },
+    {
+      "icon": "ti-heart-broken icon-xl",
+      "value": "400+",
+      "label": "GitHub Contributions"
+    }
+  ],
+  "projects": [
+    {
+      "icon": "ti-vector text-danger",
+      "title": "Portfolio",
+      "description": "Currently Viewing......",
+      "link": ""
+    },
+    {
+      "icon": "fas fa-code text-primary icon-xl",
+      "title": "Code - Edit",
+      "description": "Online code editor website you can use to code easily without setting up any code environment. As of now it supports 3 languages (C++, Python, JavaScript).",
+      "link": ""
+    },
+    {
+      "icon": "fas fa-seedling text-danger icon-xl",
+      "title": "Farm - Assist",
+      "description": "A website you can use to ask for help from AI before taking any decision regarding crop. It gives solution to all the queries regarding soil, crop, pesticides. It responses in Hindi, English.",
+      "link": ""
+    }
+  ]
+}
