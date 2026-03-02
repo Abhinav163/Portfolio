@@ -42,30 +42,38 @@ function populatePersonalInfo(personal) {
     link.textContent = personal.email;
     link.setAttribute("onclick", `copyToClipboard('${personal.email}')`);
   });
-
-  const phoneLinks = document.querySelectorAll('[onclick*="+91 7011051307"]');
-  phoneLinks.forEach((link) => {
-    link.textContent = personal.phone;
-    link.setAttribute("onclick", `copyToClipboard('${personal.phone}')`);
-  });
-
-  document
-    .querySelectorAll('.info li span:contains("Address")')
-    .forEach((item) => {
-      if (item.textContent === "Address") {
-        item.parentElement.childNodes[2].textContent = ` : ${personal.address}`;
+    // Update email and phone links safely by scanning onclick attributes
+    document.querySelectorAll('[onclick]').forEach((link) => {
+      const onclick = link.getAttribute('onclick') || '';
+      if (onclick.includes('sharmaabhinav23736@gmail.com')) {
+        link.textContent = personal.email;
+        link.setAttribute('onclick', `copyToClipboard('${personal.email}')`);
+      }
+      if (onclick.includes('+91 7011051307')) {
+        link.textContent = personal.phone;
+        link.setAttribute('onclick', `copyToClipboard('${personal.phone}')`);
       }
     });
 
-  document.querySelector(".bg-dark.py-5 h2").textContent = personal.hireMeText;
+    // Update address entry in the info list
+    document.querySelectorAll('.info li').forEach((li) => {
+      const span = li.querySelector('span');
+      if (span && span.textContent.trim() === 'Address') {
+        li.innerHTML = `<span>Address</span> : ${personal.address}`;
+      }
+    });
 
-  const hireMeBtn = document.querySelector(".bg-dark.py-5 .btn");
-  if (hireMeBtn) {
-    hireMeBtn.setAttribute(
-      "onclick",
-      `window.location.href='mailto:${personal.email}?subject=Job%20Opportunity&body=Hello,%20I%20am%20interested%20in%20discussing%20a%20job%20opportunity%20with%20you.'`,
-    );
-  }
+    // Update 'hire me' heading/button (match the section element for reliability)
+    const hireMeHeading = document.querySelector('.section.bg-dark.py-5 h2');
+    if (hireMeHeading) hireMeHeading.textContent = personal.hireMeText;
+
+    const hireMeBtn = document.querySelector('.section.bg-dark.py-5 .btn');
+    if (hireMeBtn) {
+      hireMeBtn.setAttribute(
+        'onclick',
+        `window.location.href='mailto:${personal.email}?subject=Job%20Opportunity&body=Hello,%20I%20am%20interested%20in%20discussing%20a%20job%20opportunity%20with%20you.'`
+      );
+    }
 }
 
 function populateSocialLinks(social) {
@@ -157,7 +165,8 @@ function populateExpertise(expertise) {
 }
 
 function populateExperience(experience) {
-  const experienceCard = document.querySelector(".card-body");
+  const experienceCard = document.getElementById("experience-body");
+  if (!experienceCard) return;
   experienceCard.innerHTML =
     experience
       .map(
@@ -172,9 +181,8 @@ function populateExperience(experience) {
 }
 
 function populateEducation(education) {
-  const educationCard = document
-    .querySelectorAll(".card")[1]
-    .querySelector(".card-body");
+  const educationCard = document.getElementById("education-body");
+  if (!educationCard) return;
   educationCard.innerHTML =
     "<hr />" +
     education
@@ -190,9 +198,8 @@ function populateEducation(education) {
 }
 
 function populateSkills(skills) {
-  const skillsCard = document
-    .querySelectorAll(".card")[2]
-    .querySelector(".card-body");
+  const skillsCard = document.getElementById("skills-body");
+  if (!skillsCard) return;
   skillsCard.innerHTML = skills
     .map(
       (skill) => `
@@ -210,9 +217,8 @@ function populateSkills(skills) {
 }
 
 function populateLanguages(languages) {
-  const languagesCard = document
-    .querySelectorAll(".card")[3]
-    .querySelector(".card-body");
+  const languagesCard = document.getElementById("languages-body");
+  if (!languagesCard) return;
   languagesCard.innerHTML = languages
     .map(
       (lang) => `
@@ -230,7 +236,8 @@ function populateLanguages(languages) {
 }
 
 function populateStats(stats) {
-  const statsSection = document.querySelector(".bg-dark.text-center .row");
+  const statsSection = document.getElementById("stats-row");
+  if (!statsSection) return;
   statsSection.innerHTML = stats
     .map(
       (stat) => `
@@ -251,7 +258,8 @@ function populateStats(stats) {
 }
 
 function populateProjects(projects) {
-  const projectsSection = document.querySelector("#service .row");
+  const projectsSection = document.getElementById("projects-row");
+  if (!projectsSection) return;
   projectsSection.innerHTML = projects
     .map(
       (project) => `
